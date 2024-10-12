@@ -1,11 +1,12 @@
 :root {
   --heading-font-family: "Montserrat Alternates", sans-serif;
   --default-font-family: "Poppins", sans-serif;
+  --theme-color: rgb(26, 33, 87);
 }
 body {
   font-family: var(--default-font-family);
   font-style: normal;
-  background-color: rgb(26, 33, 87);
+  background-color: var(--theme-color);
   margin: 10px;
 }
 .container {
@@ -57,6 +58,39 @@ header a {
   padding: 16px 32px;
   display: inline-block;
   margin-top: 36px;
+  border-radius: 5px;
+}
+main {
+  background-color: white;
+  padding: 80px 80px;
+}
+main h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--theme-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+main h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-color);
+}
+main p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.img-responsive {
+  max-width: 100%;
+}
+.grid-2-equal-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
 }
 .grid {
   display: grid;
@@ -71,7 +105,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(250, 243, 233);
-  padding: 80px 100px 40px;
+  padding: 80px 80px 40px;
 }
 footer h4 {
   font-size: 20px;
@@ -103,7 +137,7 @@ footer a {
   padding-top: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -116,11 +150,19 @@ footer a {
   header h3 {
     font-size: 12px;
   }
-  .grid {
+  .grid,
+  .grid-2-equal-columns {
     grid-template-columns: 1fr;
   }
   footer {
     padding: 20px;
     text-align: center;
+  }
+  main {
+    padding: 20px;
+  }
+  .img-responsive {
+    display: block;
+    margin: 0 auto;
   }
 }
