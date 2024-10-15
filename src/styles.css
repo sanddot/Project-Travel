@@ -62,22 +62,30 @@ header a {
 }
 main {
   background-color: white;
-  padding: 80px 80px;
+}
+section {
+  padding: 80px;
 }
 main h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--theme-color);
-  opacity: 0.5;
+  opacity: 0.3;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 main h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.5;
   color: var(--theme-color);
+}
+main h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--theme-color);
+  opacity: 0.4;
 }
 main p {
   font-size: 16px;
@@ -86,15 +94,54 @@ main p {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
 }
 .grid-2-equal-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
 }
-.grid {
+.secondary {
+  background-color: rgb(242, 239, 239);
+}
+.grid-3-columns {
   display: grid;
-  grid-template-columns: 3fr 4fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+}
+p strong {
+  font-weight: 500;
+}
+.card li {
+  list-style: square;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background-color: blue;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px;
+  margin-top: 40px;
+}
+.text-center {
+  text-align: center;
 }
 footer {
   background-image: linear-gradient(
@@ -105,7 +152,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(250, 243, 233);
-  padding: 80px 80px 40px;
+  padding: 60px 80px 40px;
 }
 footer h4 {
   font-size: 20px;
@@ -115,7 +162,7 @@ footer h4 {
 footer p {
   font-size: 16px;
   font-weight: 200;
-  line-height: 2;
+  line-height: 1.5;
 }
 footer ul {
   padding: 0;
@@ -151,14 +198,15 @@ footer a {
     font-size: 12px;
   }
   .grid,
-  .grid-2-equal-columns {
+  .grid-2-equal-columns,
+  .grid-3-columns {
     grid-template-columns: 1fr;
   }
   footer {
     padding: 20px;
     text-align: center;
   }
-  main {
+  section {
     padding: 20px;
   }
   .img-responsive {
