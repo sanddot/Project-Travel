@@ -61,7 +61,7 @@ header a {
   border-radius: 5px;
 }
 section {
-  padding: 80px;
+  padding: 60px;
 }
 section.secondary {
   background-color: rgb(242, 239, 239);
@@ -167,7 +167,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(250, 243, 233);
-  padding: 60px 80px 40px;
+  padding: 20px 80px;
 }
 footer h4 {
   font-size: 20px;
