@@ -133,13 +133,13 @@ main p {
 .card-pinterest-content {
   margin-top: 40px;
 }
-p strong {
-  font-weight: 500;
-}
 .card li {
   list-style: square;
   font-size: 16px;
   font-weight: 200;
+}
+p strong {
+  font-weight: 500;
 }
 .btn {
   display: block;
@@ -155,7 +155,6 @@ p strong {
   padding: 14px;
   margin: 20px;
 }
-
 .text-center {
   text-align: center;
 }
@@ -221,13 +220,6 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-  .card-footer {
-    margin-bottom: 40px;
-  }
-  footer {
-    padding: 20px;
-    text-align: center;
-  }
   section {
     padding: 30px;
   }
@@ -239,10 +231,17 @@ footer a {
   .card-header img {
     display: none;
   }
+  .card-footer {
+    margin-bottom: 40px;
+  }
   .embed {
     aspect-ratio: 16/9;
   }
   .pinterest-embeds {
     margin: 0 auto;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
   }
 }
