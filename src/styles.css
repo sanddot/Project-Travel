@@ -213,6 +213,10 @@ footer a {
   header h3 {
     font-size: 12px;
   }
+  .athens-name-origin h2,
+  h3 {
+    text-align: center;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -228,7 +232,7 @@ footer a {
     padding: 30px;
   }
   .athena-olive {
-    max-width: 50%;
+    max-width: 60%;
     display: block;
     margin: 0 auto;
   }
